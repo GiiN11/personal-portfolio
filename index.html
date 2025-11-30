@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+ <body>
+    <!--Nav-->
+    <header>
+        <nav class="nav-bar" aria-label="Main Navigation">
+            <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation menu" aria-controls="nav-menu">
+            <label class="hamburger" for="menu-toggle">
+                <span class="line1"></span>
+                <span class="line2"></span>
+                <span class="line3"></span>
+            </label>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#skills-technologies">Skills</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Hero section -->
+    <main id="profile" class="section">
+        <div class="hero-card">
+            <div class="profile-picture">
+                <img src="./assets/profile-picture.jpg" alt="Profile Picture">
+            </div>
+            <div class="flex-wrapper">
+                <h1>Chester John <span class="accent-txt">Atienza</span></h1>
+                <h2>Front-End Developer specializing in HTML, CSS, and JavaScript</h2>
+                <p>I create clean, responsive, and accessible websites focused on user experience and modern design principles.</p>
+                <div class="btn-wrapper">
+                    <a href="#projects-section" role="button" class="btn green-btn">View My Work</a>
+                    <a href="#" role="button" class="btn glass-btn">
+                        <img src="./assets/download-minimalistic-svgrepo-com.svg" alt="Download Icon">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About me section -->
+    <section class="about-me" id="about-me" aria-label="About Me">
+        <div class="about-me-card">
+            <h2>About Me</h2>
+            <p>
+                I'm Chester, a front-end developer who enjoys creating simple, intuitive, and visually appealing digital experiences. My background in industrial engineering and Microsoft Advertising shaped my ability to solve problems with clarity and a user-first mindset.
+            </p>
+            <p>
+                I enjoy front-end development because it blends creativity with logic. I'm strengthening my foundation in HTML, CSS, and JavaScript while focusing on accessibility and responsive design.
+            </p>
+            <p>
+                My goal is to build digital experiences that are meaningful, intentional, and enjoyable to use.
+            </p>
+            <div class="banner">
+                <div class="banner-icon">
+                    <img src="./assets/code-svgrepo-com.svg" alt="Coding Icon">
+                </div>
+                <div class="banner-icon">
+                    <img src="./assets/window-frame-svgrepo-com.svg" alt="Window Icon">
+                </div>
+                <div class="banner-icon">
+                    <img src="./assets/color-palette-outline-svgrepo-com.svg" alt="Color Palette Icon">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SKILLS AND TECHNOLOGIES -->
+    <section class="skills-technologies" id="skills-technologies" aria-label="Skills and Technologies">
+        <div class="skills-wrapper">
+            <div class="section-title-wrapper">
+                <h2>Skills & Technologies</h2>
+                <p>Technologies | Work With</p>
+            </div>
+            <div class="technologies">
+                <div class="technology-card">
+                    <figure class="html-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                            <title>HTML Icon</title>
+                            <path d="M12 17.56l-5.52-1.63-.37-4.18h2.7l.19 2.09 3 .81 3-.81.31-3.46H4.07l-.44-4.86h16.74l-.44 1.35H6.61l.31 2.16h10.26l-.92 10.2L12 19.44l-5.52-1.88z"/>
+                        </svg>
+                    </figure>
+                    <h4>HTML</h4>
+                    <p>Semantic and Accessible structure</p>
+                </div>
+                <div class="technology-card">
+                    <figure class="css-icon">
+                        <svg width="48" height="48" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <title>CSS Icon</title>
+                            <path fill="white" d="M483.111,0.501l-42.59,461.314l-184.524,49.684L71.47,461.815L28.889,0.501H483.111z M397.29,94.302H255.831H111.866l6.885,55.708h137.08h7.7l-7.7,3.205l-132.07,55.006l4.38,54.453l127.69,0.414l68.438,0.217l-4.381,72.606l-64.058,18.035v-0.057l-0.525,0.146l-61.864-15.617l-3.754-45.07h-0.205H132.1h-0.202l7.511,87.007l116.423,34.429v-0.062l0.21,0.062l115.799-33.802l15.021-172.761h-131.03h-0.323l0.323-0.14l135.83-58.071L397.29,94.302z"/>
+                        </svg>
+                    </figure>
+                    <h4>CSS</h4>
+                    <p>Responsive design using flexbox, Grid, and modern styling techniques</p>
+                </div>
+                <div class="technology-card">
+                    <figure class="js-icon">
+                        <svg fill="#ffffff" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
+                            <title>JavaScript Icon</title>
+                            <path d="M0 0h32v32h-32zM29.38 24.37c-0.234-1.464-1.188-2.688-4.005-3.833-0.979-0.458-2.073-0.781-2.396-1.521-0.12-0.438-0.141-0.677-0.063-0.938 0.203-0.865 1.219-1.12 2.021-0.88 0.521 0.161 1 0.557 1.302 1.198 1.38-0.901 1.38-0.901 2.339-1.5-0.359-0.557-0.536-0.802-0.781-1.036-0.839-0.943-1.958-1.422-3.776-1.38l-0.943 0.12c-0.901 0.219-1.76 0.698-2.281 1.339-1.516 1.719-1.078 4.719 0.76 5.964 1.818 1.359 4.479 1.656 4.823 2.938 0.318 1.563-1.161 2.063-2.625 1.88-1.078-0.24-1.677-0.781-2.339-1.781l-2.438 1.401c0.276 0.641 0.599 0.917 1.078 1.479 2.318 2.339 8.12 2.219 9.161-1.339 0.036-0.12 0.318-0.943 0.099-2.198zM17.401 14.708h-2.995c0 2.583-0.016 5.151-0.016 7.74 0 1.641 0.083 3.151-0.182 3.615-0.443 0.917-1.573 0.802-2.089 0.641-0.526-0.26-0.797-0.62-1.104-1.141-0.089-0.141-0.151-0.26-0.172-0.26l-2.432 1.5c0.406 0.839 1 1.563 1.766 2.021 1.141 0.682 2.672 0.901 4.276 0.542 1.042-0.302 1.943-0.922 2.411-1.88 0.682-1.24 0.536-2.76 0.531-4.464 0.016-2.74 0-5.479 0-8.24z"></path> </g>
+                        </svg>
+                    </figure>
+                    <h4>JavaScript</h4>
+                    <p>Interactive Components and user experience enhancements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects-section" id="projects-section" aria-label="Projects">
+        <div class="projects-wrapper">
+            <div class="section-title-wrapper">
+                <h2>Projects</h2>
+                <p>Recent work and case studies</p>
+            </div>
+            <div class="grid-container">
+                <div class="project-card">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <h4>Uplift Pasuyo Center – Landing Page</h4>
+                    <p>A static landing page build with HTML and CSS, focusing on layout clarity using Flex-box.</p>
+                    <a href="#" role="button" class="btn green-btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div >
+                        <img src="" alt="">
+                    </div>
+                    <h4>TaskFlow – To-Do Application</h4>
+                    <p>A lightweight JavaScript to-do app with add, complete, and delete features. Built for simplicity and usability.</p>
+                    <a href="#" role="button" class="btn purple-btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <h4>Glassfolio – Portfolio Template</h4>
+                    <p>A modern, accessible portfolio exploring glassmorphism and gradient-based UI design.</p>
+                    <a href="#" role="button" class="btn purple-btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <img src="" alt="">
+                    </div>
+                    <h4>FlexGrid Showcase</h4>
+                    <p>A demonstration of responsive layout techniques using both Flexbox and CSS Grid</p>
+                    <a href="#" role="button" class="btn purple-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- connect section -->
+    <section class="connect-section" id="contact-section" aria-label="Connect Section">
+        <div class="connect-card">
+            <h2>Let's Connect</h2>
+            <p>I'm always open to new opportunities and conversations. Feel free to reach out!</p>
+            <ul class="connect-btn">
+                <li>
+                    <a href="mailto:chesterjohnatienza@gmail.com" class="btn glass-btn">
+                        <img src="./assets/email-svgrepo-com.svg" alt="Email icon">
+                        <span>Email Me</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/GiiN11" class="btn glass-btn" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/github-svgrepo-com.svg" alt="GitHub icon">
+                        <span>GitHub</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/chester-john-atienza-912708212?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="btn glass-btn" target="_blank" rel="noopener noreferrer">
+                        <img src="./assets/linkedin-social-svgrepo-com.svg" alt="LinkedIn icon">
+                        <span>LinkedIn</span>
+                    </a>
+                </li>    
+            </ul>
+        </div>
+    </section>
+
+    <footer aria-label="Footer">
+        <p>© 2025 Chester. Designed with care and attention to detail.</p>
+    </footer>
+</body>
+</html>
