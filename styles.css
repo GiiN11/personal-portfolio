@@ -647,8 +647,17 @@ footer {
         max-width: 1025px;
     }
 
+    .name {
+        align-self: flex-start;
+    }
+
     .project-card {
         max-width: 565px;
+    }
+
+    .flex-wrapper {
+        gap: calc(var(--spacing-base) * 2);
+
     }
 
     .flex-wrapper h2,
@@ -661,7 +670,6 @@ footer {
         flex-direction: row;
         justify-content: flex-start;
         padding-right: calc(var(--spacing-base) * 50);
-
     }
 
     .flex-wrapper h1 {
