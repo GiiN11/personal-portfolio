@@ -509,7 +509,7 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    height: 12rem;
+    max-height: 12rem;
     width: 100%;
 }
 
