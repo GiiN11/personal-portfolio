@@ -279,18 +279,23 @@ main, section {
 }
 
 .nav-menu a {
-    border-radius: calc((var(--border-radius-base) * 2));
+    border-radius: calc(var(--border-radius-base) * 2);
     color: var(--color-heading);
     display: block;
     font-family: var(--font-outfit);
     font-size: var(--font-size-base);
     font-weight: var(--fw-reg);
+    letter-spacing: 0;
     margin-top: 5px;
-    padding: calc((var(--spacing-base) * 4));
+    padding: calc(var(--spacing-base) * 4);
+    padding-left: calc(var(--spacing-base) * 4);
+
     transition:
         background-color 0.3s ease,
         color 0.3s ease,
-        border 0.3s ease;
+        border 0.3s ease,
+        letter-spacing 0.3s ease,
+        padding-left 0.3s ease;
 }
 
 .nav-menu a:not(:last-child) {
@@ -298,8 +303,10 @@ main, section {
 }
 
 .nav-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.347);
-    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    letter-spacing: 2px;
+    padding-left: calc(var(--spacing-base) * 3);
 }
 
 #menu-toggle:checked ~ .nav-menu {
