@@ -486,9 +486,18 @@ main {
     gap: calc((var(--spacing-base) * 6));
 }
 
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
 .project-card div {
     border-radius: calc((var(--border-radius-base) * 2));
     box-shadow: var(--shadow-card);
+    overflow: hidden;
+    object-fit: cover;
     display: flex;
     align-items: flex-start;
     justify-content: center;
